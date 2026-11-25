@@ -1,0 +1,21 @@
+# Illustrative Placeholder Configuration (Sanitized)
+# NOTE: Generic educational parameters only.
+# Proprietary block formulas, shrinkage priors, risk caps, and lags are redacted.
+
+synthetic:
+  n_steps: 2400
+  seed: 101
+  factor_signal_strength: 0.22
+
+model:
+  horizon_steps: 20
+  embargo_steps: 20
+  rebalance_step: 20
+  min_train_obs: 15
+  xs_clip: 3.0
+  xs_min_currencies: 5
+  ridge_reg_strength: 100.0
+  prior_weight: 0.04
+  max_block_share: 0.35
+  vol_halflife: 20
+  n_placebo_draws: 100

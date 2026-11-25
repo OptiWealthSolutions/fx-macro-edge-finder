@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fx-macro-edge-finder"
+version = "0.1.0"
+description = "Sanitized architectural showcase of Edge Finder v2.1 cross-sectional macro FX framework on synthetic data."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "scipy>=1.10",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["edge_finder_v2/tests"]
